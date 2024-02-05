@@ -1,0 +1,167 @@
+FIRST:
+ Global rules:
+ start
+which are the Sizing, Paddings, Margins , Html Scrolling , Fonts from google font  , Ul :none to its designe ,
+ Container which it collectes all the elements together in all screens to be all the same size and Responsive the
+  /media queries/.
+end
+--------------------------------------------------------------------------------------------------------------------------
+Responsive:
+Header:
+When we had links we do an Icone which will appear and the links disappear instead in mobile screen .we want to hide the 
+links also n the mobile screen we do the display:none in the max-width of the mobile screen , with max-width any thing
+ below it the code active .and when ermove the links the height of the container has diminished so will do the min-height 
+ : 97px we choosethe minimum because if we need to increase the padding it shoulde work , we use Padding between the same 
+ elements and the Margin between Diferent elements, 
+ to the text we need to make its width 100% in mobile screen, then we remove the arows ,
+ now to the services we need to add to the svr-box display flex flex-direction column then the text in
+ the center so the contents will be designed under each other
+ we need to put to the main-heading paragraph  The max-width property defines the maximum width of an element.
+ If the content is larger than the maximum width, it will automatically change the height of the element
+ 100% to fit and full screen the veiowport, then we moved to the icon we do margin bottom 30px but we need to put it in
+ the center so we write margin top right and left 0 or auto
+ the Design image in the mobile we need to remove it so we do display none ,
+ in flex we want 4 boxes in larg screen and in medium 2 mobile 1  so we use
+  flex-basis property specifies the initial length of a flexible item,
+  About img we do max-width 100% to fit at mobile,
+  in the tree screen we need to chang the flex-basis of the box it means how many items will show in the screen 
+  flex-wrap:Specifies that the flexible items will wrap if necessary. we did the the wrap in media to get in the next lie when 
+  the width of the screen changes synchronomise with flex-basis.
+  Skills: to design the items in one line we do flex but in mobile we don't wantthem on the same line
+  we do > div direct div it means the testimonial and skills  it means that it search only for the element child that has the
+   class name child directly after the up parent it means it wont find ... elements between them
+  so we do the size in flex-basis basis property specifies the initial length of a flexible item 45% because if we do 50% it wil stick together the 10% left of 50% 
+  it wil be in the end right so we do space-between to get it in the middle , 
+  and for the testimonials content we do it under each other we either flex-wrap or flex-direction column 
+  then to center the text in the content container we do text-align center and the img we make the center by margin auto
+  but if it didn't work we do the transform translate on X or Y 
+
+--------------------------------------------------------------------------------------------------------------------------
+Header:
+start
+we're gonna orgnize headrs' items we did flex to make the space beween the contents ,then the aligne of them is center,
+then the poositio relative to be the up to anu element within the container .
+then we will do the lne at the bottom of the header we'll do t by pesudo element after to the container
+ first we wrte the content ''then we write position absolute to inherit the attributes of the up 
+ which is the container and to fit with it
+the purpose of the bottom and left and the width to get the line strt from the end of the right
+ padding and to end in the start of the left padding .
+now we want to do the nav which has the most space of the headr so we use flex:1;it means how much
+ the item will grow relative to the rest of the flexible items, the nav elements will distributed by 
+ Flex too, everything will be in Flex,
+we did the flex-end to the nav because it's the container to the elements for me I did to the Li but
+ it didn't work so it's better to do t to the big Container one , if we did anything in Flex attributes
+  we did the aligne center ,
+we want to do the Hover to show the blue color through its space we will do z-index:1; to links to be above 
+the line pesudo,now we're gonna do the form which is has two items the vertical line and the icon if we want
+ to do more than item in one class itbetter to write position relative and absolute to fit each other then 
+ to make the vertical center we use top:50%,
+ and right:0 then transform translatey:-50% . 
+if we need to do Hover to then the next thing happenes like open a list of links we put the next thing
+ after the Hover prefixed with the Add signe + .
+to show the list we write display: flex; because we need to use the Flex attributes ana at last the Header wont be
+ from the Landing sections so we're gonna do with position absolute,  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Landing:
+the min-height of the landing is 100% in height which is grow on the y axis
+vh:	Relative to 1% of the height of the viewport
+we don't need to put a Container to hold the elements in the center ,we brought the arows fonts from the library fonts and 
+then we designe it we gave them the center position with Y and the color and there is two of them the right just gave them 
+right value because they were on the left side then we moved to bullets we do  ul has three li we gave the container of 
+the ul position absolute we needed to do the center and flex to do row direction and the center code then to the Li 
+circle bullet shape need width height border solid color and margin because the padding didn't work between the Li 
+then we gave them bottom position then the colors , Active class  need to be written nclose to item li.active one word
+the text p to make the text under each other either determine the width or write break br
+-------------------------------------------------------------------------------------------------------------------------------
+Section:
+Main Header: First we need to define the items Heading h2 , shape in Beore and After and Paragraph .
+the main-heading class which is the container of the items , as long as those items are texts to make them in the center 
+it just need to write tex-aligne:center. 
+and for the space to the items we do padding to the main container which is the section ,
+then we do the designe to the h2 we gave it the Weight normal then the the padding-bottom between the paragraph then 
+we need to do forms with pseudo elements so we write position relative then we gave a uppercase and size to the fonts.
+now the before first we determine the content "", absolute, width, height, position center if on x we write left 50% if 
+y top 50% if both we write 0 to both , then the position right bottom top then the color ,
+we do the boxes with if we want to do this grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+first it means tow columns the first one is fullscreen and the second start from the width of the container and end in
+ the max which is fraction the left of the space that will be.
+ The grid-template-columns property specifies the number (and the widths) of
+  columns in a grid layout.
+ The values are a space separated list, where each value specifies the size of the respective column.
+ to put the icons and the text on the same level and beside together we write Display:Flex; 
+ the icon we did margin right it meas it moves from the right towards 
+H3 to designed we did margin bottom 
+--------------------------------------------------------------------------------------------------------------------------
+Design:
+first we made the main section which is the padding top and boottom 
+then the backgroun img the to make it a cover then it has a specefic width the we need to design the its itmes baser on the upper div
+so we gave it a position relative then we did flex to make the content center but we use aligne items because the difrenret
+between them that the justify-content property aligns the flexible container's items when the items do not use all
+ available space on the main-axis (horizontally). but The align-items property specifies the default alignment
+  for items inside a flexbox or grid container. In a flexbox container, the flexbox items are aligned on the cross axis
+  , which is vertical by default (opposite of flex-direction).
+  now we will do the overlay with pesudo element because as a spearate class in this section it didn't work
+  for the Image and the Text we'll give to both z-indx:2; to put them on the top of the content and flex:1; to 
+  distbute the space equally between the Text and Image it means how much the item will grow relative to the rest of the flexible items
+  now class Image : to make it in the center we write text-aligne :center;
+no for the img we do a relative position and chang its positionrelative	The element is positioned relative
+ to its normal positio, so "left:20px" adds 20 pixel to the element's LEFT positio, and there somethinf is out of the section
+ so to remove it we do write over flow hidden in the main container 
+ we don't need to the content in the text because we didn;t use the text cass in design or the position
+ UL we need to padding just top and bottom because there's icon so we're gonna make it
+ -----------------------------------------------------------------------------------------------------------------------
+ Portfolio:
+ if we did the ul class we designe the class in the css,
+the img max-width: it means it dosn't get out off the border of the content, 
+
+we will do the images portfolio in the fex wrap to go under in the next line when it has to ,
+because the grid-template column it made a space empty in some screen width,
+we need to design the hover so first we made the caption hide under the img
+The CSS margin properties are used to create space around elements, outside of any defined borders
+Padding is used to create space around an element's content, inside of any defined borders,
+we need to do the link more we made the center by margin becauseit's link a and the text by text-align center
+-------------------------------------------------------------------------------------------------------------- 
+ Video:
+------------------------------------
+About:
+to do the boxes either in grid or in 1 flex ,2flex wrap 3flex-basis all three are important
+then we do flex-basis to do equale space between them
+we put the number in div not heading h1,
+if we write left 0 and top 0 it starts from the left top corner,
+to design the icon we first try to do the padding to the backgroun not work then the margin it didn't also i notce what 
+i must do when I saw the shape of the margin and then I did the top 0 the left ,right auto and the bottom change justify
+--------------------------------------------------------------------------------------------------------------------------
+Skills:
+first we're gonna start with the main container that's holding the all itmes we give it the padding section then we design the items
+ Heading h3 and p we add margin to the auto side we don't want to change its width 
+ then the box content flex then to do center first I tried justify-content but no then  
+  The align-items property specifies the default alignment
+  for items inside a flexbox or grid container. In a flexbox container, the flexbox items are aligned on the cross axis
+  , which is vertical by default (opposite of flex-direction). AND WITHOUT IT will streach verticaly so 
+  we do the vertical center align items,
+  Always if you want to to design a container include several items we first write each item to know how to and what 
+  to design first in first ,
+  no to the span which has the style width im percent we first give the span block element properties Displays an element 
+  as a block element (like <p>). It starts on a new line, and takes up the whole width,
+  we didn't use the height in the before because we used padding because of the text aligne to be the crossing axis center 
+  so we do the padding on top and bottom 
+  -------------------------------------------------------------------------------------------------------------------------
+  Pricing:
+  we do grid if we want to have gaps to the the plans 
+  The CSS code you provided, repeat(auto-fill, minmax(295px, 1fr)), is used to define a grid layout using the grid-template-columns property. It's often used in conjunction with CSS Grid Layout to create a flexible grid that adapts to the available space.
+
+  Here's what each part of the code means:
+  
+  repeat(auto-fill, minmax(295px, 1fr)): This part of the code sets up the grid columns. Let's break it down:
+  repeat(auto-fill, ...): This specifies that the grid should automatically fill the available space with as many columns as can fit, based on the width of the container. The auto-fill keyword is used to create as many columns as can fit within the container's width.
+  minmax(295px, 1fr): This defines the size range for the columns. It means that the column width should be at least 295 pixels (295px), but it can grow to take up available space up to a maximum of 1 fraction unit (1fr). The 1fr unit distributes the available space equally among the columns.
+  In summary, this CSS code creates a grid layout with columns that are at least 295 pixels wide, but they can grow and adapt to fill the available space equally based on the container's width. This is often used for responsive design, where the number of columns adjusts automatically based on the container's width, ensuring optimal display on various screen sizes.
+we did to the plans ul li not last child bottom =0 beacuse we don't want to start from the top and we do not last child so it wont appear
+above tha border bottom to the ul
+---------------------------------------------------------------------------------------------------------------------------------------------
+Subscripe:
+we did position relative to show the pragraph in the container and in the form
+as we do flex to the container we can do for the media queries to get the element under each other we do flex direction column
+------------------------------------------------------------------------------------------------------------------------------
+Contact
+as we are working on flex we do all the attributes in flex like flex-basis to do the margin and the width  
